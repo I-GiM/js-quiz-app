@@ -197,12 +197,6 @@ body {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 560px) {
-    body {
-        background: url(https://res.cloudinary.com/iykeoyiih/image/upload/v1588577325/HNGi7.0/Start.NG/HTML-CSS-JS%20Task%204/background_1_epgg1l.jpg);
-        background-position: center;
-        background-size: cover;   
-    }
-
     .question {
         height: auto;
         font-size: 1.2rem;
