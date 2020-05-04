@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+        <title>Simple Quiz App - Play</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,600;0,800;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+                <div id="hud">
+                    <div id="hud-item">
+                        <p class="hud-top">Question</p>
+                        <h1 class="hud-info" id="questionCount"></h1>
+                    </div>
+                    <div id="hud-item">
+                        <p class="hud-top">Score</p>
+                        <h1 class="hud-info" id="score">0</h1>
+                    </div>
+                </div>
+                <h2 class="question"></h2>
+                <div class="answers">
+                    <div class="option-wrap">
+                        <p class="option-num">A</p>
+                        <p class="option" data-number="1">Choice 1</p>
+                    </div>
+                    <div class="option-wrap">
+                        <p class="option-num">B</p>
+                        <p class="option" data-number="2">Choice 2</p>
+                    </div>
+                    <div class="option-wrap">
+                        <p class="option-num">C</p>
+                        <p class="option" data-number="3">Choice 3</p>
+                    </div>
+                    <div class="option-wrap">
+                        <p class="option-num">D</p>
+                        <p class="option" data-number="4">Choice 4</p>
+                    </div>
+                </div>
+                
+                <a class="" id="next" onclick="nextQstn()"></a>
+                <a class="" id="finish" onclick="finishQuiz()"></a>
+        </div>
+        <div class="credit"><a href="https://www.freepik.com/free-photos-vectors/pattern" target="_blank">Pattern photo created by freepik - www.freepik.com</a></div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,251 @@
+* {
+    font-family: 'Jost', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(https://res.cloudinary.com/iykeoyiih/image/upload/v1588577325/HNGi7.0/Start.NG/HTML-CSS-JS%20Task%204/background_1_epgg1l.jpg);
+    
+}
+
+/* -- Quiz App -- */
+.container {
+    display: grid;
+    place-items: center center;
+    text-align: center;
+    height: 100vh;
+    padding: 0 1.5rem;
+}
+
+#hud {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#hud-item {
+    display: grid;
+    grid-auto-rows: auto;
+}
+
+.hud-top {
+    place-self: center;
+    padding: 0.2rem;
+}
+
+.hud-info {
+    place-self: center;
+    padding: 0.2rem;
+    color: #3b3b3b;
+}
+
+.question {
+    display: flex;
+    height: 7rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem;
+    background-color: #fff;
+    color: #3b3b3b;
+}
+
+.answers {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 0.8rem;
+    row-gap: 0.8rem;
+}
+
+.option-wrap {
+    display: flex;
+    background: rgba(255, 255, 255, 0.8);
+    height: auto;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border: 1px solid #08d0e3;
+    font-weight: 600;
+}
+
+.option-wrap:hover {
+    cursor: pointer;
+    border: 1px solid #fff;
+    background: #08d0e3;
+    color: #fff;
+}
+
+.option-num {
+    margin-right: 1rem;
+    padding: 10px 15px;
+    border: 2px solid #00d1e1;
+    font-weight: 600;
+    background: #fff;
+    color: #3b3b3b;
+}
+
+.option {
+    width: 100%;
+    text-align: left;
+    height: 100%;
+}
+
+.next-btn {
+    background: #fff;
+    color: #08d0e3;
+    align-items: center;
+    font-weight: 600;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.next-btn:hover {
+    background: #00d1e1;
+    color: #fff;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+.correct {
+    background-color: #2bd12b;
+    color: #fff;
+}
+
+.correct:hover {
+    background-color: #2bd12b;
+    color: #fff;
+}
+
+.incorrect {
+    background-color: #fc2323;
+    color: #fff;
+}
+
+.incorrect:hover {
+    background-color: #fc2323;
+    color: #fff;
+}
+
+/* -- Home Page -- */
+
+#container {
+    display: grid;
+    place-items: center center;
+    text-align: center;
+    height: 100vh;
+    padding: 0 1.5rem;
+}
+
+.title-wrap {
+    display: grid;
+    align-content: center;
+}
+
+.title {
+    background: rgba(255, 255, 255, 0.8);
+    color: #3b3b3b;
+    text-transform: uppercase;
+    margin: 20px 0;
+    padding: 20px 40px;
+    font-size: 3rem;
+}
+
+.btn {
+    text-decoration: none;
+    place-self: center;
+    background-color: #fff;
+    color: #08d0e3;
+    padding: 5px 10px;
+    border: 2px solid #fff;
+    width: 40%;
+    font-weight: 600;
+}
+
+.btn:hover {
+    color: #fff;
+    background: #08d0e3;
+    border: 2px solid #fff;
+}
+
+/* -- Finish Page --*/
+
+.visit {
+    padding: 20px 0;
+    font-size: 1.2rem;
+}
+
+.visit a {
+    color: #fff;
+}
+
+.visit.message {
+    font-size: 1.8rem;
+    font-weight: 800;
+    padding: 15px 0;
+}
+
+.credit {
+    text-align: center;
+    color: #3b3b3b;
+    opacity: 0.5;
+    font-size: 0.7rem;
+    text-decoration: none;
+    padding-bottom: 20px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 560px) {
+    body {
+        background: url(https://res.cloudinary.com/iykeoyiih/image/upload/v1588577325/HNGi7.0/Start.NG/HTML-CSS-JS%20Task%204/background_1_epgg1l.jpg);
+        background-position: center;
+        background-size: cover;   
+    }
+
+    .question {
+        height: auto;
+        font-size: 1.2rem;
+    }
+
+    .answers {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr;
+        
+        column-gap: 0.8rem;
+        row-gap: 0.8rem;
+    }
+
+    /* -- Home Page --*/
+
+    #container {
+        text-align: center;
+        margin: 10px auto;
+        
+    }
+
+    .title-wrap {
+        float: left;
+        width: 90vw;
+        display: grid;
+        grid-template-rows: 2fr 1fr;
+        row-gap: 20px;
+    }
+
+    .title {
+        margin: 0;
+        width: 90%;
+        padding: 0 5px;
+        font-size: 2rem;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        place-self: center;
+    }
+
+    .btn {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        width: 60%;
+    }
+}
