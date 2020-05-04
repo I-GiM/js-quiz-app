@@ -13,6 +13,7 @@ let checkAnswer = false;
 let score = 0;
 let questionCount = 0;
 let quizQuestion = [];
+localStorage.setItem('Score', score);
 
 let questions = [
     {
@@ -150,6 +151,7 @@ correctAns =()=>{
 }
 
 setScore = numb => {
+    
     score += numb;
     scoreInfo.innerText = score;
     localStorage.setItem('Score', score);
