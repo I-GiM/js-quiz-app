@@ -6,7 +6,7 @@ const nextBtn = document.getElementById('next');
 const finish = document.getElementById('finish');
 const scoreInfo = document.getElementById('score');
 const questionCountInfo = document.getElementById('questionCount');
-
+const removeNext = document.getElementById('next');
 
 let liveQuestion = {};
 let checkAnswer = false;
@@ -91,6 +91,7 @@ clickNext = () => {
         //let finish = document.getElementById('finish');
         finish.innerHTML = 'Finish';
         finish.classList.add('next-btn');
+        removeNext.remove();
     } else {
         nextBtn.innerText = 'Next';
         nextBtn.classList.add('next-btn');
